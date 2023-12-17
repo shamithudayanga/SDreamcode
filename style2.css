@@ -1,0 +1,160 @@
+.main-body{
+    background-color: #D9F7E3;
+  }
+  
+  @font-face {
+      font-family: "lite";
+      src: url("font/JosefinSans-Light.ttf");
+  }
+  
+  @font-face {
+      font-family: "medium";
+      src: url("font/JosefinSans-Medium.ttf");
+  }
+  
+  @font-face {
+      font-family: "poppins";
+      src: url("font/Poppins-Regular.ttf");
+  }
+  
+  @font-face {
+      font-family: "bebas";
+      src: url("font/BebasNeue-Regular.ttf");
+  }
+  
+  *{
+      font-family: "lite";
+  }
+  
+  .title02{
+      font-family: "medium";
+      color: #109c2c ;
+  }
+  
+  .second-title{
+      font-family: "poppins";
+  }
+  
+  .end-title{
+      font-family: "bebas";
+  }
+  
+  .end-link{
+      font-family: "bebas";
+  }
+  
+  .card-title {
+      color: #1e2e23 ;
+      font-size: 1.5em;
+      line-height: normal;
+      font-weight: 700;
+      margin-bottom: 0.5em;
+    }
+    
+    .small-desc {
+      font-size: 1em;
+      font-weight: bolder;
+      line-height: 1.5em;
+      color: #192218;
+    }
+    
+    .small-desc {
+      font-size: 1em;
+    }
+    
+    .go-corner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      width: 2em;
+      height: 2em;
+      overflow: hidden;
+      top: 0;
+      right: 0;
+      background: linear-gradient(135deg, #12B94A , #15E85C );
+      border-radius: 0 4px 0 32px;
+    }
+    
+    .go-arrow {
+      margin-top: -4px;
+      margin-right: -4px;
+      color: white;
+      font-family: courier, sans;
+    }
+    
+    .card {
+      display: block;
+      position: relative;
+      max-width: 400px;
+      max-height: 320px;
+      background-color: #f2f8f9;
+      border-radius: 10px;
+      padding: 2em 1.2em;
+      margin: 12px;
+      text-decoration: none;
+      z-index: 0;
+      overflow: hidden;
+      background: linear-gradient(to bottom, #2d9c58, #a7d1d9);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .card:before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: -16px;
+      right: -16px;
+      background: linear-gradient(135deg, #364a60, #384c6c);
+      height: 32px;
+      width: 32px;
+      border-radius: 32px;
+      transform: scale(1);
+      transform-origin: 50% 50%;
+      transition: transform 0.35s ease-out;
+    }
+    
+    .card:hover:before {
+      transform: scale(28);
+    }
+    
+    .card:hover .small-desc {
+      transition: all 0.5s ease-out;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    
+    .card:hover .card-title {
+      transition: all 0.5s ease-out;
+      color: #ffffff;
+    }
+  
+    button {
+      padding: 1.3em 3em;
+      font-size: 12px;
+      width: 100%;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      font-weight: 500;
+      color: #000;
+      background-color: #fff;
+      border: none;
+      border-radius: 45px;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease 0s;
+      cursor: pointer;
+      outline: none;
+    }
+    
+    button:hover {
+      background-color: #23c483;
+      box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+      color: #fff;
+      transform: translateY(-7px);
+    }
+    
+    button:active {
+      transform: translateY(-1px);
+    }
+
+
+   
